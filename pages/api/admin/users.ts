@@ -27,7 +27,7 @@ const getUsers = async(req: NextApiRequest, res: NextApiResponse<Data>) =>  {
     await db.connect();
     const users = await User.find().select('-password').lean();
     await db.disconnect();
-
+    // @ts-ignore
     return res.status(200).json( users );
 }
 

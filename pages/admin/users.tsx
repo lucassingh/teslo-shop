@@ -27,7 +27,7 @@ const usersPage = () => {
     const onRoleUpdated = async (userId: string, newRole: string) => {
 
         const previousUser = users.map(user => ({...user}))
-        // @ts-ignore
+        
         const updatedUsers = users.map(user => ({
             ...user,
             role: userId === user._id ? newRole : user.role
