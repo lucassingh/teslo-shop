@@ -5,7 +5,7 @@ import { AdminLayout } from '../../components/layouts'
 import { Grid, MenuItem, Select } from '@mui/material';
 import useSWR from 'swr';
 import { IUser } from '../../interfaces';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 
 const UsersPage = () => {
 

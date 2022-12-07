@@ -6,7 +6,7 @@ import { Box, Button, Chip, Divider, Grid, Link, TextField, Typography } from '@
 import { AuthLayout } from '../../components/layouts'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { validations } from '../../utils';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 import { ErrorOutline } from '@mui/icons-material';
 import { AuthContext } from '../../context';
 import { useRouter } from 'next/router';

@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren, useEffect, useReducer } from 'react';
 import Cookies from 'js-cookie';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 import { IUser } from '../../interfaces';
 import { AuthContext, authReducer } from './';
 import axios from 'axios';

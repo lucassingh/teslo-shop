@@ -5,7 +5,7 @@ import { AuthContext } from '../../context';
 import { Box, Button, Chip, Grid, Link, TextField, Typography } from '@mui/material'
 import { AuthLayout } from '../../components/layouts'
 import { useForm } from 'react-hook-form';
-import { tesloApi } from '../../api';
+import { tesloApi } from '../../axiosApi';
 import { ErrorOutline } from '@mui/icons-material';
 import { validations } from '../../utils';
 import { getSession, signIn } from 'next-auth/react';
