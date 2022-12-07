@@ -1,3 +1,4 @@
+
 import React from 'react'
 import useSWR from 'swr';
 import NextLink from 'next/link'
@@ -11,6 +12,7 @@ const columns:GridColDef[] = [
     { 
         field: 'img', 
         headerName: 'Imagen',
+        // @ts-ignore
         renderCell: ({row}: GridValueGetterParams) => {
             return (
                 <a href={`/product/${row.slug}`} target="_blank" rel="noreferrer">
@@ -27,6 +29,7 @@ const columns:GridColDef[] = [
         field: 'title', 
         headerName: 'Titulo', 
         width: 250,
+        // @ts-ignore
         renderCell: ({row}: GridValueGetterParams) => {
             return (
                 <NextLink href={`/admin/products/${row.slug}`} passHref>

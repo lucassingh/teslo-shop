@@ -14,6 +14,7 @@ const columns:GridColDef[] = [
     {
         field: 'isPaid',
         headerName: 'Pagada',
+        // @ts-ignore
         renderCell: ({ row }: GridValueGetterParams) => {
             return row.isPaid
                 ? ( <Chip variant='outlined' label="Pagada" color="success" /> )
@@ -24,6 +25,7 @@ const columns:GridColDef[] = [
     {
         field: 'check',
         headerName: 'Ver orden',
+        // @ts-ignore
         renderCell: ({ row }: GridValueGetterParams) => {
             return (
                 <a href={ `/admin/orders/${ row.id }` } target="_blank" rel="noreferrer" >

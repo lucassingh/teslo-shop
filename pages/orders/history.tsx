@@ -15,6 +15,7 @@ const columns: GridColDef[] = [
         headerName: 'Pagada',
         description: 'Show if this order was paid',
         width: 200,
+        // @ts-ignore
         renderCell: (params: GridValueGetterParams) => {
             return (
                 params.row.paid
@@ -29,6 +30,7 @@ const columns: GridColDef[] = [
         description: 'Redirect to order',
         width: 200,
         sortable: false,
+        // @ts-ignore
         renderCell: (params: GridValueGetterParams) => {
             return (
                 <NextLink href={`/orders/${params.row.orderId}`} passHref>

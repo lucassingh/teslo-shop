@@ -50,6 +50,7 @@ const usersPage = () => {
             field: 'role',
             headerName: 'Role',
             width: 300,
+            // @ts-ignore
             renderCell: ({ row }: GridValueGetterParams) => {
                 return (
                     <Select
