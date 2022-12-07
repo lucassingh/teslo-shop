@@ -127,7 +127,7 @@ const LoginPage = () => {
                                 passHref
                             >
                                 <Link sx={{ fontSize: '12px' }}>
-                                    Don't have account?
+                                    Do not have account?
                                 </Link>
                             </NextLink>
                         </Grid>

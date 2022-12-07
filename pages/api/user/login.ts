@@ -15,7 +15,7 @@ type Data =
         }
     }
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 
     switch (req.method) {
         case 'POST':
@@ -58,3 +58,4 @@ const loginUser = async(req: NextApiRequest, res: NextApiResponse<Data>) => {
     })
 }
 
+export default handler;

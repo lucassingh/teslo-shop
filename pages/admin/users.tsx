@@ -7,7 +7,7 @@ import useSWR from 'swr';
 import { IUser } from '../../interfaces';
 import { tesloApi } from '../../api';
 
-const usersPage = () => {
+const UsersPage = () => {
 
     const { data, error } = useSWR<IUser[]>('/api/admin/users')
 
@@ -27,7 +27,7 @@ const usersPage = () => {
     const onRoleUpdated = async (userId: string, newRole: string) => {
 
         const previousUser = users.map(user => ({...user}))
-        
+
         const updatedUsers = users.map(user => ({
             ...user,
             role: userId === user._id ? newRole : user.role
@@ -98,4 +98,4 @@ const usersPage = () => {
     )
 }
 
-export default usersPage
+export default UsersPage
