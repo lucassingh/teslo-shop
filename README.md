@@ -1,3 +1,31 @@
+# Teslo Shop
+
+Teslo shop is a clone of Tesla shop. Developed with the MERN stack.
+We used Material UI + NEXT JS for the frontend and Node js + mongo DB for the backend. 
+It is a list of products separated by categories with a shopping cart with a payment platform using paypal with stripe.
+It also has authentication to create purchase orders and different user roles (admin - user).
+
+## Home view
+
+![teslo-home](https://user-images.githubusercontent.com/25686886/206232806-3ddae6ed-7aec-46d9-a7c4-323df8950fd9.png)
+
+## Detail product view
+
+![teslo-detail-prod](https://user-images.githubusercontent.com/25686886/206233181-1cad78ad-ed63-4fb5-9a88-f71f8375bd6a.png)
+
+## Auth View
+
+![teslo-auth](https://user-images.githubusercontent.com/25686886/206232864-0872bcb1-ec9d-4c65-b0fc-d5eb16988014.png)
+
+## Cart view
+
+![teslo-cart](https://user-images.githubusercontent.com/25686886/206232938-de175850-86ec-4ea7-9220-aae08b0e5e5e.png)
+
+## Payment View
+
+![teslo-detail-pay](https://user-images.githubusercontent.com/25686886/206233061-8df9b045-883b-44cd-b6cc-7c1ed498d46e.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
