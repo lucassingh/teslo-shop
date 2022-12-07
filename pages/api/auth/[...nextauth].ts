@@ -15,6 +15,7 @@ export default NextAuth({
                 email: { label: 'Correo:', type: 'email', placeholder: 'correo@google.com' },
                 password: { label: 'Contraseña:', type: 'password', placeholder: 'Contraseña' },
             },
+            // @ts-ignore
             async authorize(credentials) {
                 console.log({ credentials })
                 // return { name: 'Juan', correo: 'juan@google.com', role: 'admin' };
@@ -25,7 +26,9 @@ export default NextAuth({
         }),
 
         GithubProvider({
+            // @ts-ignore
             clientId: process.env.GITHUB_ID,
+            // @ts-ignore
             clientSecret: process.env.GITHUB_SECRET,
         }),
     ],
@@ -72,7 +75,7 @@ export default NextAuth({
         async session({ session, token, user }) {
 
             //console.log({session, token, user})
-
+            // @ts-ignore
             session.accessToken = token.accessToken;
 
             session.user = token.user as any
